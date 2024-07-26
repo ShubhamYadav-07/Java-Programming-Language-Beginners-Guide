@@ -14,5 +14,6 @@ public class LargestOfThreeNum {
         else{
             System.out.println(num3+" is greatest.");
         }
+        sc.close();
     }
 }
