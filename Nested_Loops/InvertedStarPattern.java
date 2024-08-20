@@ -8,7 +8,7 @@ public class InvertedStarPattern {
         System.out.println("Enter how many no. of lines : ");
         int line = sc.nextInt();
         for(int i=1;i<=line;i++){
-            for(int j=1;j<=(4-i+1);j++){
+            for(int j=1;j<=(line-i+1);j++){
                 System.out.print("*");
             }
             System.out.println();
