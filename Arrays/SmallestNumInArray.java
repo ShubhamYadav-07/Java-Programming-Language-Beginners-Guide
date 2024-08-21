@@ -1,6 +1,6 @@
 package Arrays;
 import java.util.*;
-public class SmallestInArray {
+public class SmallestNumInArray {
 
     public static int getSmallest(int arr[]){
         int smallest = Integer.MAX_VALUE;    // Initialize +infinity (highest possible integer).
