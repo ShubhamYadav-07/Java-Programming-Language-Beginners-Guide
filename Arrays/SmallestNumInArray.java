@@ -24,7 +24,7 @@ public class SmallestNumInArray {
             System.out.print(arr[i]+" ");
         }
         System.out.println("]");
-        System.out.println("The smallest element is : " + getSmallest(arr));    //Call getLargest()
+        System.out.println("The smallest element is : " + getSmallest(arr));   //Call getLargest()
         sc.close();
     }
 }
