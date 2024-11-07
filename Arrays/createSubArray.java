@@ -1,5 +1,4 @@
 package Arrays;
-import java.util.*;
 public class createSubArray {
     public static void printSubArrays(int numbers[]){
         int total_subarray=0;
