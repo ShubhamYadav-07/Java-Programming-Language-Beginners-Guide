@@ -12,7 +12,7 @@ public class PairsInArrays {
             }
             System.out.println();
         }
-        System.out.println("the total pairs are : " + total_pair);           //total pair counter.
+        System.out.println("the total pairs are : " + total_pair);           //total pair counter./\formula: n(n-1)/2
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
