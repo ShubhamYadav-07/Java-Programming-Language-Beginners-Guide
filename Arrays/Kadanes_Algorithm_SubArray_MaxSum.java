@@ -4,6 +4,7 @@ public class Kadanes_Algorithm_SubArray_MaxSum {
     public static void kadanes_Algorithm(int numbers[]){
         int maxSum = Integer.MIN_VALUE;
         int currSum = 0;
+        boolean allnegative=false;              //check if all elements in array is -ve ?
         for(int i=0;i<numbers.length;i++){      //Time Complexity = O(n)
 
             //currSum calculation
@@ -16,9 +17,20 @@ public class Kadanes_Algorithm_SubArray_MaxSum {
 
             //compare the maximum value b/w currSum and maxSum in each step.
             maxSum=Math.max(currSum,maxSum);
-            if(maxSum==0){
-                maxSum=Math.max(currSum,0);
+        }
+        for(int i=0;i<numbers.length;i++){
+            if(numbers[i]<0){
+                allnegative=true;
             }
+        }
+        if(allnegative==true){          //if all -ve true then display the least maximum value.
+            int max=Integer.MIN_VALUE;
+            for(int i=0;i<numbers.length;i++){
+                if(numbers[i]>max){
+                    max=numbers[i];
+                }
+            }
+            maxSum=max;
         }
         System.out.println("The max SubArray sum is: " + maxSum);
     }
